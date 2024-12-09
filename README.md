@@ -1,16 +1,19 @@
 # app_ecomerce
 
-A new Flutter project.
+dert tout les modification d ( update version , update package , some error gradl )
+also :
+manifest dyal khuna 
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+    dependencies {
+       classpath 'com.android.tools.build:gradle:7.0.4'
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+flutter clean
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+ gradle.properties :
+kotlin.daemon.enabled=falseorg.gradle.jvmargs=-Xmx4096m
+
