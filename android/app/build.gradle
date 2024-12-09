@@ -1,0 +1,73 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+    localProperties.load(reader)
+}
+}
+
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+
+android {
+    //namespace = "com.example.app_ecomerce"
+    namespace 'com.fahad.app'
+    compileSdkVersion 35
+    ndkVersion "25.1.8937393"
+     compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17
+    }
+
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin'
+}
+
+
+defaultConfig {
+    applicationId "com.fahad.app"
+    minSdkVersion 23
+    targetSdkVersion 35
+    versionCode flutterVersionCode.toInteger()
+    versionName flutterVersionName
+}
+
+
+buildTypes {
+    release {
+ 
+        signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+// See the updated portion of the answer if you're using a more recent version of Flutter and Dart.
+
+dependencies {
+    // Eliminate this line (or the entire dependencies block)
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20"
+}

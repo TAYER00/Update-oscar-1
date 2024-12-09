@@ -1,0 +1,98 @@
+name: app_ecomerce
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+ 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+ 
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  url_launcher: ^6.3.1
+  supabase_flutter: any
+  forui: any
+  
+  #build with apk
+  cupertino_icons: ^1.0.6
+  google_nav_bar: any
+
+  firebase_analytics: ^11.1.0
+  fluttertoast: ^8.2.6
+  collection: ^1.18.0
+  #flutter_credit_card: ^4.0.1
+  intl: any
+  geolocator: ^13.0.2
+  audioplayers: ^6.0.0
+  firebase_auth: ^5.1.1
+  google_fonts: ^6.2.1
+  provider: ^6.1.2
+
+  flutter_polyline_points: ^2.0.0
+  google_maps_flutter: ^2.1.7
+
+  curved_navigation_bar: ^1.0.6
+  lottie: ^3.1.3
+ 
+
+ 
+ 
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+ 
+    
+  # riverpod == provider
+  #just for debug
+  flutter_lints: any
+ 
+
+
+
+
+   
+
+
+  
+  
+
+ 
+flutter:
+
+ 
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+      - lib/images/ 
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+ 
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
